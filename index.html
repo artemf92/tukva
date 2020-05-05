@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- Titles -->
+	<title>Тыква</title>
+	<meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+
+	<!-- Syles -->
+	<link rel="stylesheet" href="dist/css/style.min.css">
+
+	<!-- FavIcon -->
+	<link rel="icon" href="img/favicon.png"  type="image/x-icon" />
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Manrope:300,400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+	<!-- Font awesome -->
+	<!-- <link rel="stylesheet" href="css/all.min.css"> -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+	<header>
+		<button id="menu-toggle"><i class="large material-icons">menu</i></button>
+		<div class="header__logo">Логотип</div>
+		<div class="header__phone">+7 (495) 111 11 11</div>
+		<div class="header__mail">hello@tukva.ru</div>
+		<div class="header__work-time">Пн-Пт 
+с 9 до 19 (МСК)</div>
+		<div class="header__location">Москва, Крымский вал 3,
+стр.2, оф.22</div>
+		<button class="btn btn__blue">Рассчитать стоимость</button>
+	</header>
+	<nav>
+		<div class="container">
+			<ul class="header__nav">
+				<li class="header__nav--item active">О компании</li>
+				<li class="header__nav--item">Портфолио</li>
+				<li class="header__nav--item">Разрабокта сайта</li>
+				<li class="header__nav--item">SEO продвижение</li>
+				<li class="header__nav--item">Аудит сайта</li>
+				<li class="header__nav--item">Контекстная реклама</li>
+				<li class="header__nav--item">Поддержка сайта</li>
+				<li class="header__nav--item">Контакты</li>
+			</ul>
+		</div>
+		<article class="selected__nav--item">
+			<div class="container">
+					<h2 class="nav__item--title">Продвижение сайтов в Москве с гарантией</h2>
+					<p class="nav__item--desc">Используем эффективные способы продвижения, которые приносят результат за короткое время.
+					</p>
+					<p class="nav__item--desc-bold">Выводим сайты в ТОП от одного месяца</p>
+					<div class="nav__item--features">
+						<p class="feature">
+							<img src="img/icons/week.svg" alt="Результат от 3-х недель">
+							<span>Результат 
+от 3-х недель</span>
+						</p>
+						<p class="feature">
+							<img src="img/icons/garant.svg" alt="Финансовые гарантии в договоре">
+							<span>Финансовые гарантии в договоре</span>
+						</p>
+						<p class="feature">
+							<img src="img/icons/pig.svg" alt="Продвижение от 16 000руб.">
+							<span>Продвижение от 16 000руб.</span>
+						</p>
+					</div>
+					<button class="btn btn__blue">Заказать SEO-проверку сайта бесплатно</button>			
+				</article>	
+			</div>
+	</nav>
+		<!-- Стоимость продвижения сайта -->
+
+		<section class="prices">
+			<div class="container">
+				<h3 class="section-title prices-title">Стоимость продвижения сайта</h3>
+				<p>Студия “Тыква” предлагает выгодные тарифы на продвижение сайтов под ключ с гарантией качества</p>
+				<div id="prices-carousel" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+        				<article class="card__prices card-gold activate d-block w-100 centered">
+        					<div class="card__prices--title">Seo gold</div>
+        					<div class="card__prices--desc">
+        						<p>Увеличьте трафик с поиска в несколько раз: получайте от 
+        10 000 до 1 000 000 посетителей в месяц</p>
+        					</div>
+        						<p class="kpi">KPI: <span class="value">трафик</span></p>
+        						<p class="result">Результат: <span class="value">с 1 месяца</span></p>
+        						<p class="cost">Стоимость <span class="value">фиксированная</span></p>
+        						<p class="finance">Финансовые <span class="value"></span>гарантии в договоре</p>
+        					<div class="card__prices--cost">от 54000 руб.</div>
+        					<button class="btn btn__blue">Купить</button>
+        				</article>
+				    </div>
+				    <div class="carousel-item">
+				      <article class="card__prices card-standart d-block w-100 centered">
+						<div class="card__prices--title">ПО ПОЗИЦИЯМ</div>
+						<div class="card__prices--desc">
+							<p>Будьте выше конкурентов 
+в ТОП-10 Яндекс и Google по интересным Вам запросам</p>
+						</div>
+						<p class="kpi">KPI: <span class="value">трафик</span></p>
+						<p class="result">Результат: <span class="value">с 3 недели</span></p>
+						<p class="cost">Стоимость <span class="value">фиксированная</span></p>
+						<p class="finance">Финансовые <span class="value"></span>гарантии в договоре</p>
+						<div class="card__prices--cost">от 42000 руб.</div>
+						<button class="btn btn__blue">Купить</button>
+					</article>
+				    </div>
+				    <div class="carousel-item">
+      					<article class="card__prices card-platinum d-block w-100 centered">
+      						<div class="card__prices--title">Seo platinum</div>
+      						<div class="card__prices--desc">
+      							<p>Платите только за выведенные в ТОП запросы или за 
+      привлеченных с поисковиков 
+      посетителей</p>
+      						</div>
+      						<p class="kpi">KPI: <span class="value">позиции или/и трафик</span></p>
+      						<p class="result">Результат: <span class="value">с 3 недели</span></p>
+      						<p class="cost">Стоимость <span class="value">фиксированная для запроса/перехода</span></p>
+      						<p class="finance">Финансовые <span class="value"></span>гарантии в договоре</p>
+      						<div class="card__prices--cost">от 70000 руб.</div>
+      						<button class="btn btn__blue">Купить</button>
+      					</article>
+				    </div>
+				  </div>
+				</div>
+				<div class="cards-wrapper">
+					<article class="card__prices card-standart">
+						<div class="card__prices--title">ПО ПОЗИЦИЯМ</div>
+						<div class="card__prices--desc">
+							<p>Будьте выше конкурентов 
+в ТОП-10 Яндекс и Google по интересным Вам запросам</p>
+						</div>
+						<p class="kpi">KPI: <span class="value">трафик</span></p>
+						<p class="result">Результат: <span class="value">с 3 недели</span></p>
+						<p class="cost">Стоимость <span class="value">фиксированная</span></p>
+						<p class="finance">Финансовые <span class="value"></span>гарантии в договоре</p>
+						<div class="card__prices--cost">от 42000 руб.</div>
+						<button class="btn btn__blue">Купить</button>
+					</article>
+					<article class="card__prices card-gold activate">
+						<div class="card__prices--title">Seo gold</div>
+						<div class="card__prices--desc">
+							<p>Увеличьте трафик с поиска в несколько раз: получайте от 
+	10 000 до 1 000 000 посетителей в месяц</p>
+						</div>
+							<p class="kpi">KPI: <span class="value">трафик</span></p>
+							<p class="result">Результат: <span class="value">с 1 месяца</span></p>
+							<p class="cost">Стоимость <span class="value">фиксированная</span></p>
+							<p class="finance">Финансовые <span class="value"></span>гарантии в договоре</p>
+						<div class="card__prices--cost">от 54000 руб.</div>
+						<button class="btn btn__blue">Купить</button>
+					</article>
+					<article class="card__prices card-platinum">
+						<div class="card__prices--title">Seo platinum</div>
+						<div class="card__prices--desc">
+							<p>Платите только за выведенные в ТОП запросы или за 
+привлеченных с поисковиков 
+посетителей</p>
+						</div>
+						<p class="kpi">KPI: <span class="value">позиции или/и трафик</span></p>
+						<p class="result">Результат: <span class="value">с 3 недели</span></p>
+						<p class="cost">Стоимость <span class="value">фиксированная для запроса/перехода</span></p>
+						<p class="finance">Финансовые <span class="value"></span>гарантии в договоре</p>
+						<div class="card__prices--cost">от 70000 руб.</div>
+						<button class="btn btn__blue">Купить</button>
+					</article>
+				</div>
+			</div>
+		</section>
+	
+		<!-- / -->
+
+	<section class="banner">
+		<div class="container">
+			<div class="banner__wrapper">
+				<article class="banner--desc">
+					<h4 class="section-title title--white">Ваш сайт раскручивают, но вы не видите результата?</h4>	<span>У нас есть для вас уникальное предложение</span>
+				</article>
+				<button class="btn btn-white">Получить бесплатный аудит</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- / -->
+
+	<!-- Примеры наших работ -->
+
+	<section class="examples">
+		<div class="figure-one"></div>
+		<div class="examples__background">
+		</div>
+		<div class="container">
+			<h3 class="section-title title--white">Примеры наших работ за 2020 год</h3>
+			<div class="carousel-wrapper">
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+				  	<div class="carousel-inner">
+
+					    <div class="carousel-item active">
+					        <div class="examples__slide d-block w-100">
+								<img src="img/example1.jpg" alt="" class="slide--picture">
+								<table class="slide--table">
+									<tr>
+										<td>Адрес сайта:</td>
+										<td>site.ru</td>
+									</tr>
+									<tr>
+										<td>Тематика:</td>
+										<td>Агенство недвижимости</td>
+									</tr>
+									<tr>
+										<td>Регион</td>
+										<td>Москва</td>
+									</tr>
+								</table>
+								<button class="btn btn__blue btn__slide">Смотреть</button>
+							</div>
+					    </div>
+
+					    <div class="carousel-item">
+					      	<div class="examples__slide d-block w-100">
+								<img src="img/example1.jpg" alt="" class="slide--picture">
+								<table class="slide--table">
+									<tr>
+										<td>Адрес сайта:</td>
+										<td>site.ru</td>
+									</tr>
+									<tr>
+										<td>Тематика:</td>
+										<td>Агенство недвижимости</td>
+									</tr>
+									<tr>
+										<td>Регион</td>
+										<td>Москва</td>
+									</tr>
+								</table>
+								<button class="btn btn__blue btn__slide">Смотреть</button>
+							</div>
+					    </div>
+
+					    <div class="carousel-item">
+					      	<div class="examples__slide d-block w-100">
+								<img src="img/example1.jpg" alt="" class="slide--picture">
+								<table class="slide--table">
+									<tr>
+										<td>Адрес сайта:</td>
+										<td>site.ru</td>
+									</tr>
+									<tr>
+										<td>Тематика:</td>
+										<td>Агенство недвижимости</td>
+									</tr>
+									<tr>
+										<td>Регион</td>
+										<td>Москва</td>
+									</tr>
+								</table>
+								<button class="btn btn__blue btn__slide">Смотреть</button>
+							</div>
+					    </div>
+
+				    	<div class="carousel-item">
+					      	<div class="examples__slide d-block w-100">
+								<img src="img/example1.jpg" alt="" class="slide--picture">
+								<table class="slide--table">
+									<tr>
+										<td>Адрес сайта:</td>
+										<td>site.ru</td>
+									</tr>
+									<tr>
+										<td>Тематика:</td>
+										<td>Агенство недвижимости</td>
+									</tr>
+									<tr>
+										<td>Регион</td>
+										<td>Москва</td>
+									</tr>
+								</table>
+								<button class="btn btn__blue btn__slide">Смотреть</button>
+							</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="cards-wrapper sliders">
+				<div class="examples__slide">
+					<img src="img/example1.jpg" alt="" class="slide--picture">
+					<table class="slide--table">
+						<tr>
+							<td>Адрес сайта:</td>
+							<td>site.ru</td>
+						</tr>
+						<tr>
+							<td>Тематика:</td>
+							<td>Агенство недвижимости</td>
+						</tr>
+						<tr>
+							<td>Регион</td>
+							<td>Москва</td>
+						</tr>
+					</table>
+					<button class="btn btn__blue btn__slide">Смотреть</button>
+				</div>
+
+				<div class="examples__slide">
+					<img src="img/example1.jpg" alt="" class="slide--picture">
+					<table class="slide--table">
+						<tr>
+							<td>Адрес сайта:</td>
+							<td>site.ru</td>
+						</tr>
+						<tr>
+							<td>Тематика:</td>
+							<td>Агенство недвижимости</td>
+						</tr>
+						<tr>
+							<td>Регион</td>
+							<td>Москва</td>
+						</tr>
+					</table>
+					<button class="btn btn__blue btn__slide">Смотреть</button>
+				</div>
+
+				<div class="examples__slide active">
+					<img src="img/example1.jpg" alt="" class="slide--picture">
+					<table class="slide--table">
+						<tr>
+							<td>Адрес сайта:</td>
+							<td>site.ru</td>
+						</tr>
+						<tr>
+							<td>Тематика:</td>
+							<td>Агенство недвижимости</td>
+						</tr>
+						<tr>
+							<td>Регион</td>
+							<td>Москва</td>
+						</tr>
+					</table>
+					<button class="btn btn__blue btn__slide">Смотреть</button>
+				</div>
+
+				<div class="examples__slide">
+					<img src="img/example1.jpg" alt="" class="slide--picture">
+					<table class="slide--table">
+						<tr>
+							<td>Адрес сайта:</td>
+							<td>site.ru</td>
+						</tr>
+						<tr>
+							<td>Тематика:</td>
+							<td>Агенство недвижимости</td>
+						</tr>
+						<tr>
+							<td>Регион продвижения</td>
+							<td>Москва</td>
+						</tr>
+					</table>
+					<button class="btn btn__blue btn__slide">Смотреть</button>
+				</div>
+			</div>
+			<button class="btn examples__btn">Все кейсы</button>
+		</div>
+	</section>
+
+	<!-- / -->
+
+	<!-- Рекламный экран -->
+
+	<section class="advertise">
+		<div class="container">
+			<h3 class="section__title">Почему стоит заказать продвижение сайта у нас?</h3>
+			<div class="cards-wrapper">
+				<div class="advert__item">
+					<div class="advert__item--title">Предоставление гарантий</div>
+					<div class="advert__item--desc">Мы уверены в своих силах и наша компетентность позволяет давать клиентам реальные гарантии!</div>
+				</div>
+				<div class="advert__item">
+					<div class="advert__item--title">Достижение 
+результатов</div>
+					<div class="advert__item--desc">Выводим сайт в ТОП 10 поисковых систем Яндекс и Google по Москве и России</div>
+				</div>
+				<div class="advert__item">
+					<div class="advert__item--title">Проведение 
+консультаций</div>
+					<div class="advert__item--desc">Готовы оперативно ответить и дать объяснения на все вопросы по вашему сайту и нашей работе по нему</div>
+				</div>
+				<div class="advert__item">
+					<div class="advert__item--title">Выгодные
+цены</div>
+					<div class="advert__item--desc">Предоставляем выгодные тарифы для проектов любой сложности без дополнительных наценок</div>
+				</div>
+				<div class="advert__item">
+					<div class="advert__item--title">Минимальные 
+сроки</div>
+					<div class="advert__item--desc">Выводим сайты на первые места в поисковой выдаче в сжатые сроки</div>
+				</div>
+				<div class="advert__item">
+					<div class="advert__item--title">Соверменные 
+методики</div>
+					<div class="advert__item--desc">Используем реально работающие методики раскрутки сайтов</div>
+				</div>
+				<div class="advert__item">
+					<div class="advert__item--title">Комплексно 
+и под ключ</div>
+					<div class="advert__item--desc">Оказываем весь спектр услуг под ключ и сами выполняем доработки</div>
+				</div>
+				<div class="advert__item">
+					<div class="advert__item--title">Ежемесячная 
+отчетность</div>
+					<div class="advert__item--desc">В конце каждого месяца предоставляем отчет по выполненной работе</div>
+				</div>
+			</div>
+			<button class="btn btn__blue btn__advert">Как мы работаем?</button>
+		</div>
+	</section>
+
+	<!-- / -->
+
+	<!-- КАК МЫ РАБОТАЕМ? -->
+
+	<section class="our-work">
+		<h3 class="section-title title-white">Как мы работаем</h3>
+		<div class="container">
+			<div class="half__block-wrapper">
+				<div class="our-work__item">
+					<div class="item__num">1</div>
+					<div class="item--desc">
+						<h4 class="item--title">Анализируем сайт</h4>
+						<p>Оцениваем текущее состояние вашего сайта</p>
+					</div>
+				</div>
+				<div class="our-work__item">
+					<div class="item__num">2</div>
+					<div class="item--desc">
+						<h4 class="item--title">Подбираем ключевые слова</h4>
+						<p>Подбираем правильные ключевые слова для продвижения</p>
+					</div>
+				</div>
+				<div class="our-work__item">
+					<div class="item__num">3</div>
+					<div class="item--desc">
+						<h4 class="item--title">Проводим оптимизацию</h4>
+						<p>Оптимизируем сайт под ключевые запросы</p>
+					</div>
+				</div>
+				<div class="our-work__item">
+					<div class="item__num">4</div>
+					<div class="item--desc">
+						<h4 class="item--title">Улучшаем юзабилити</h4>
+						<p>Прорабатываем и улучшаем удобство сайта</p>
+					</div>
+				</div>
+				<div class="our-work__item">
+					<div class="item__num">5</div>
+					<div class="item--desc">
+						<h4 class="item--title">Повышаем конверсию</h4>
+						<p>Анализируем коммерческие факторы и повышаем конверсию</p>
+					</div>
+				</div>
+				<div class="our-work__item">
+					<div class="item__num">6</div>
+					<div class="item--desc">
+						<h4 class="item--title">Ссылки на соц. сети</h4>
+						<p>Разрабатываем стратегию по внешним ссылкам и соц. сетям</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- / -->
+
+	<!-- Бесплатная консультация -->
+
+	<section class="free__consult">
+		<div class="container">
+			<div class="consult__wrapper">
+				<h3 class="section-title title--white">
+					Получите бесплатную консультацию
+				</h3>
+				<p>Введите ваш номер телефона и мы свяжемся с вами ближайшее время</p>
+				<form class="form__consult">
+					<input type="phone" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+					<button class="btn btn-black btn-consult">Отправить</button>
+				</form>
+			</div>			
+		</div>
+	</section>
+
+	<!-- / -->
+
+		<!-- Дополнительные сервисы -->
+
+		<section class="add__services">
+			<div class="container">
+				<h3 class="section-title">Дополнительные услуги</h2>
+				<div class="cards-wrapper">
+					<div class="add__services--card">
+						<img src="img/icons/services-icons/icon1.svg" alt="" class="add__services--picture">
+						<h4 class="add__services--title">Разработка сайта</h4>
+						<p class="add__services--desc">Мы уверены в своих силах и наша компетентность позволяет давать клиентам реальные гарантии!
+Мы уверены в своих силах и наша компетентность позволяет давать клиентам реальные гарантии!</p>
+						<span class="add__services--cost">от 10000 руб.</span>
+					</div>
+					<div class="add__services--card active">
+						<img src="img/icons/services-icons/icon2.svg" alt="" class="add__services--picture">
+						<h4 class="add__services--title">Оптимизация сайта</h4>
+						<p class="add__services--desc">Мы уверены в своих силах и наша компетентность позволяет давать клиентам реальные гарантии!
+Мы уверены в своих силах и наша компетентность позволяет давать клиентам реальные гарантии!</p>
+						<span class="add__services--cost">от 10000 руб.</span>
+					</div>
+					<div class="add__services--card">
+						<img src="img/icons/services-icons/icon3.svg" alt="" class="add__services--picture">
+						<h4 class="add__services--title">Аудит сайта</h4>
+						<p class="add__services--desc">Мы уверены в своих силах и наша компетентность позволяет давать клиентам реальные гарантии!
+Мы уверены в своих силах и наша компетентность позволяет давать клиентам реальные гарантии!</p>
+						<span class="add__services--cost">от 10000 руб.</span>
+					</div>
+					<div class="add__services--card">
+						<img src="img/icons/services-icons/icon4.svg" alt="" class="add__services--picture">
+						<h4 class="add__services--title">Поддержка сайта</h4>
+						<p class="add__services--desc">Мы уверены в своих силах и наша компетентность позволяет давать клиентам реальные гарантии!
+Мы уверены в своих силах и наша компетентность позволяет давать клиентам реальные гарантии!</p>
+						<span class="add__services--cost">от 10000 руб.</span>
+					</div>
+					<div class="add__services--card">
+						<img src="img/icons/services-icons/icon5.svg" alt="" class="add__services--picture">
+						<h4 class="add__services--title">Составление семантического ядра</h4>
+						<p class="add__services--desc">Мы уверены в своих силах и наша компетентность позволяет давать клиентам реальные гарантии!
+Мы уверены в своих силах и наша компетентность позволяет давать клиентам реальные гарантии!</p>
+						<span class="add__services--cost">от 10000 руб.</span>
+					</div>
+					<div class="add__services--card">
+						<img src="img/icons/services-icons/icon6.svg" alt="" class="add__services--picture">
+						<h4 class="add__services--title">Контекстная реклама</h4>
+						<p class="add__services--desc">Мы уверены в своих силах и наша компетентность позволяет давать клиентам реальные гарантии!
+Мы уверены в своих силах и наша компетентность позволяет давать клиентам реальные гарантии!</p>
+						<span class="add__services--cost">от 10000 руб.</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- / -->
+
+		<!-- О компании Тыква -->
+
+		<section class="about">
+			<div class="container">
+				<div class="half__block-wrapper">
+					<div class="half__block">
+						<h3 class="section-title">О компании "Тыква"</h3>
+						<span class="block-title">
+							<p>Текст 1</p>
+						</span>
+						<span class="block-title">
+							<p>Благодаря правильной раскрутке позиции вашего сайта улучшаются. Это увеличивает его посещаемость, обеспечивает увеличение обращений и рост продаж</p>
+						</span>
+						<span class="block-title">
+							<p>Благодаря правильной раскрутке позиции вашего сайта улучшаются. Это увеличивает его посещаемость, обеспечивает увеличение обращений и рост продаж. Благодаря правильной раскрутке позиции вашего сайта улучшаются. </p>
+						</span>						
+					</div>
+				</div>			
+			</div>
+		</section>
+
+		<!-- / -->
+
+		<!-- С нами работают -->
+
+		<section class="partners">
+			<div class="container">
+				<h3 class="section-title">С нами работают</h3>
+				<div class="cards-wrapper">
+					<div class="partner__logo">
+						<img src="img/partners/e20.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e16.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e17.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e11.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e10.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e6_1.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e4_1.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e3_1.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e2_1.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e9.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e19.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e13.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e5_1.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e8_1.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e14.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e15.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e12.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e7_1.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e1_1.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+					<div class="partner__logo">
+						<img src="img/partners/e18.png" alt="">
+						<p>Текст краткое описание партнера</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- / -->
+
+		<!-- Остались вопросы -->
+
+		<section class="request--form questions">
+			<div class="container">
+				<div class="half__block-wrapper">
+					<div class="form__card">
+						<h3 class="section-title">Остались вопросы?</h3>
+						<p class="form__card--desc">Оставьте заявку, наши SEO-специалисты свяжутся с вами в ближайшее время</p>
+						<form name="request" class="form__request">
+							<div class="input-field">
+								<label for="name">Имя</label>
+								<input type="text" id="name" placeholder="Иван">	
+							</div>
+							<div class="input-field">
+								<label for="phone">Телефон</label>
+								<input type="phone" id="phone" placeholder="+7 (___) ____-__-__">
+							</div>
+							<button type="submit" class="btn btn__blue">Отправить заявку</button>
+							<div class="input-field input-personal-data">
+								<input type="checkbox" name="personal__data" id="personal__data" checked>
+								<label for="personal__data">Я согласен с условиями обработки персональных данных</label>
+							</div>
+						</form>
+					</div>			
+				</div>
+			</div>
+		</section>
+
+		<!-- / -->
+
+		<!-- Наши контакты -->
+
+		<section class="contacts">
+			<div class="container">
+				<h3 class="section-title">Наши контакты</h3>
+				<div class="half__block-wrapper">
+						<div class="contacts-wrapper">
+							<p class="header__location">г. Москва, Крымский вал 3, стр.2, оф. 22</p>
+							<p class="header__mail">hello@tukva.ru</p>
+							<p class="header__work-time">Пн-Пт с 9 до 19 (МСК)</p>
+							<p class="header__phone">+7 (495) 111 11 11</p>
+							<p class="social-icons">
+								<a href="#"><img src="img/icons/tg.svg" alt="Telegram link"></a>
+								<a href="#"><img src="img/icons/in.svg" alt="Instagram link"></a>
+								<a href="#"><img src="img/icons/fb.svg" alt="Facebook link"></a>
+								<a href="#"><img src="img/icons/vk.svg" alt="Vkontakte link"></a>
+							</p>
+						</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- / -->
+
+		<!-- FOOTER -->
+
+		<footer>
+			<div class="container">
+				<div class="footer-wrapper">
+					<ul class="footer__section">
+						<li class="footer__section--logo">логотип</li>
+						<li class="footer__section--copyright">2006-2020  
+© Компания “Тыква”</li>
+					</ul>
+					<ul class="footer__section">
+						<li class="footer__section--item"><a href="#">О компании</a></li>
+						<li class="footer__section--item"><a href="#">Портфолио</a></li>
+						<li class="footer__section--item"><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="footer__section">
+						<li class="footer__section--item"><a href="#">Контекстная реклама</a></li>
+						<li class="footer__section--item"><a href="#">SEO-продвижение</a></li>
+						<li class="footer__section--item"><a href="#">Разработка сайта</a></li>
+					</ul>
+					<ul class="footer__section">
+						<li class="footer__section--item"><a href="#">Поддержка сайта</a></li>
+						<li class="footer__section--item"><a href="#">Аудит сайта</a></li>
+					</ul>
+					<ul class="footer__section">
+						<li class="footer__section--item footer__section--contacts">Контакты</li>
+						<li class="footer__section--item">+7 (495) 111 11 11</li>
+						<li class="footer__section--item">hello@tukva.ru</li>
+						<li class="footer__section--item">Пн-Пт с 9 до 19 (МСК)</li>
+						<li class="footer__section--item">Москва, Крымский вал 3, стр.2, оф. 22</li>
+						<li class="footer__section--item footer__section--social">
+							<a href="#"><img src="img/icons/social-white/tg.svg" alt="Telegram link"></a>
+							<a href="#"><img src="img/icons/social-white/in.svg" alt="Instagram link"></a>
+							<a href="#"><img src="img/icons/social-white/fb.svg" alt="Facebook link"></a>
+							<a href="#"><img src="img/icons/social-white/vk.svg" alt="Vkontakte link"></a>
+						</li>
+					</ul>
+				</div>
+				<p class="politics"><a href="#">Политика конфиденциальности</a></p>
+			</div>
+		</footer>
+
+		<!-- Sidebar -->
+		<div class="d-flex" id="wrapper">
+		    <div class="bg-light border-right" id="sidebar-wrapper">
+		      <div class="sidebar-heading"><div class="header__logo">Логотип</div></div>
+		      <div class="list-group list-group-flush">
+		        <a href="#" class="list-group-item list-group-item-action bg-light active">О компании</a>
+		        <a href="#" class="list-group-item list-group-item-action bg-light">Портфолио</a>
+		        <a href="#" class="list-group-item list-group-item-action bg-light">Разрабокта сайта</a>
+		        <a href="#" class="list-group-item list-group-item-action bg-light">SEO продвижение</a>
+		        <a href="#" class="list-group-item list-group-item-action bg-light">Аудит сайта</a>
+		        <a href="#" class="list-group-item list-group-item-action bg-light">Контекстная реклама</a>
+		        <a href="#" class="list-group-item list-group-item-action bg-light">Поддержка сайта</a>
+		        <a href="#" class="list-group-item list-group-item-action bg-light">Контакты</a>
+		        <hr>
+		        <ul class="sidebar-list">
+		        	<li class="sidebar-list__item sidebar__phone">+7 (495) 111 11 11</li>
+		        	<li class="sidebar-list__item sidebar__mail">hello@tukva.ru</li>
+		        	<li class="sidebar-list__item sidebar__work-time">Пн-Пт 
+		        с 9 до 19 (МСК)</li>
+		        	<li class="sidebar-list__item sidebar__location">Москва, Крымский вал 3,
+		        стр.2, оф.22</li>
+		        </ul>
+		        <button class="btn btn__blue">Рассчитать стоимость</button>
+		      </div>
+		    </div>
+		</div>
+		<button id="menu-close"> 
+			<i class="material-icons">close</i>
+		</button>
+	    <!-- / -->
+		<!-- / -->
+
+	<!-- <section class="block__one">
+		<div class="half__block-wrapper">
+			<h3 class="section-title">Все еще думаете для чего вам необходимо родвижение сайта?</h3>
+			<span class="block--title">Рост прибыли</span>
+			<p class="block--desc">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam modi, quisquam reprehenderit alias placeat eligendi error, tempora debitis maiores velit omnis odio praesentium natus similique?
+			</p>
+			<span class="block--title">Доступность</span>
+			<p class="block--desc">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet corrupti corporis optio quod beatae facilis labore at voluptatibus architecto. Officia reiciendis labore, incidunt reprehenderit quos.
+			</p>
+			<span class="block--title">Стабильность</span>
+			<p class="block--desc">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo tenetur ullam blanditiis dolorem, debitis quasi cumque quis amet excepturi?
+			</p>
+		</div>
+	</section> -->
+
+	<!-- / -->
+
+	<!-- Что говорят наши клиенты -->
+
+	<!-- <section class="reviews">
+		<div class="container">
+			<div class="cards-wrapper reviews-cards">
+				<div class="review">
+					<p class="review-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit nostrum, temporibus voluptatibus veritatis tenetur. Quaerat accusamus odio perferendis, ipsa quasi?</p>
+					<p class="review-name">Владимир Путин</p>
+					<p class="review-professional">Президент России</p>
+				</div>
+				<div class="review">
+					<p class="review-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia itaque temporibus quasi dolores molestias quia est, sit! Dignissimos voluptates, quibusdam!</p>
+					<p class="review-name">Владимир Путин</p>
+					<p class="review-professional">Президент России</p>
+				</div>
+				<div class="review">
+					<p class="review-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorem, earum. Sed, nostrum repellendus quam quos deserunt necessitatibus iure est.</p>
+					<p class="review-name">Владимир Путин</p>
+					<p class="review-professional">Президент России</p>
+				</div>
+				<div class="review">
+					<p class="review-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum deserunt vel cupiditate laudantium, error quasi laboriosam omnis minus voluptate dolor.</p>
+					<p class="review-name">Владимир Путин</p>
+					<p class="review-professional">Президент России</p>
+				</div>
+			</div>
+			<div class="reviews__slider--arrows">
+				<div class="prev"></div>
+				<div class="next"></div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- / -->
+
+
+	<!-- Библиотека jQuery -->
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	
+	<!-- Bootstrap JS скрипты -->
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Собственные JS скрипты -->
+	<script src="dist/js/main.js"></script>
+
+</body>
+</html>
