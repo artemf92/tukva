@@ -1,6 +1,6 @@
 "use strict";
 
-var btnOurWork = document.querySelector('.btn__advert');
+var btnOurWork = document.querySelector('.btn__seo');
 var sectionOurWork = document.querySelector('.our-work');
 var sidebar = document.querySelector('#wrapper');
 var btnSideBarClose = document.querySelector('#menu-close');
