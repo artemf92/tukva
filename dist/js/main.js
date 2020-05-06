@@ -30,8 +30,21 @@ btnOurWork.addEventListener('click', function () {
   showBlock(btnOurWork, sectionOurWork, 300);
 }); // Открытие гамбургера
 
-hamburger.addEventListener('click', function () {
+hamburger.addEventListener('click', function (evt) {
+  evt.stopPropagation();
   sidebar.classList.toggle('toggled');
   btnSideBarClose.style.opacity = 1;
+}); // Закрытие гамбургера при клике в любое другое место
+
+document.addEventListener('click', function (evt) {
+  var target = evt.target;
+  var itsHamburger = target == hamburger;
+  var itsMenu = target == sidebar || sidebar.contains(target);
+  var menuIsToggled = sidebar.classList.contains('toggled');
+
+  if (!itsMenu && !itsHamburger && menuIsToggled) {
+    sidebar.classList.remove('toggled');
+    btnSideBarClose.style.opacity = 0;
+  }
 });
 //# sourceMappingURL=main.js.map
