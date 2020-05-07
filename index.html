@@ -16,6 +16,7 @@
 
 	<!-- Syles -->
 	<link rel="stylesheet" href="dist/css/style.min.css">
+	<!-- <link rel="stylesheet" href="css/style.css">  -->
 
 	<!-- FavIcon -->
 	<link rel="icon" href="img/favicon.png"  type="image/x-icon" />
@@ -82,7 +83,7 @@
 							<span>Продвижение от 16 000руб.</span>
 						</p>
 					</div>
-					<button class="btn btn__blue">Заказать SEO-проверку сайта бесплатно</button>			
+					<button class="btn btn__blue" id="popup-open">Заказать SEO-проверку сайта бесплатно</button>			
 				</article>	
 			</div>
 	</nav>
@@ -818,7 +819,35 @@
 			<i class="material-icons">close</i>
 		</button>
 	    <!-- / -->
-		<!-- / -->
+
+		<!-- POPUP -->
+		<div class="popup">
+			<h3 class="section-title">Заказать SEO-проверку сайта бесплатно</h3>
+			<form name="request" class="form__popup">
+				<div class="input-field">
+					<label for="popup-name">Имя</label>
+					<input type="text" id="popup-name" placeholder="Иван">	
+				</div>
+				<div class="input-field">
+					<label for="popup-phone">Телефон</label>
+					<input type="phone" id="popup-phone" placeholder="+7 (_ _ _)_ _ _-_ _-_ _">
+				</div>
+				<div class="input-field">
+					<label for="popup-mail">Email</label>
+					<input type="text" id="popup-mail" placeholder="ivan@mail.ru">
+				</div>
+				<div class="input-field">
+					<label for="popup-website">Веб-сайт</label>
+					<input type="text" id="popup-website" placeholder="ivan.ru">
+				</div>
+				<button type="submit" class="btn btn__blue" id="btn__popup-submit">Проверить сайт</button>
+			</form>	
+			<button id="popup-close"> 
+				<i class="material-icons">close</i>
+			</button>
+		</div>
+		<div class="overlay"></div>
+	<!-- / -->
 
 	<!-- <section class="block__one">
 		<div class="half__block-wrapper">
@@ -884,6 +913,7 @@
 	
 	<!-- Собственные JS скрипты -->
 	<script src="dist/js/main.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>

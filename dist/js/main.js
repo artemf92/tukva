@@ -4,19 +4,25 @@ var btnOurWork = document.querySelector('.btn__seo');
 var sectionOurWork = document.querySelector('.our-work');
 var sidebar = document.querySelector('#wrapper');
 var btnSideBarClose = document.querySelector('#menu-close');
-var hamburger = document.querySelector('#menu-toggle'); // Функция выводит плавно блок на экран
+var hamburger = document.querySelector('#menu-toggle');
+var popup = document.querySelector('.popup');
+var popupOpen = document.querySelector('#popup-open');
+var popupClose = document.querySelector('#popup-close');
+var overlay = document.querySelector('.overlay'); // Функция выводит плавно блок на экран
 
-function showBlock(btn, el, speed) {
+function showBlock(el, speed) {
+  var btn = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
   el.style.display = 'block';
   var step = 1 / speed;
   var interval = setInterval(function () {
     if (+el.style.opacity >= 1) clearInterval(interval);
-    btn.style.opacity = +btn.style.opacity - step;
-    el.style.opacity = +el.style.opacity + step;
 
-    if (+btn.style.opacity <= 0) {
-      btn.style.display = "none";
+    if (btn) {
+      btn.style.opacity = +btn.style.opacity - step;
+      if (+btn.style.opacity <= 0) btn.style.display = "none";
     }
+
+    el.style.opacity = +el.style.opacity + step;
   }, speed / 1000);
 } // Закрытие сайдбара
 
@@ -27,7 +33,7 @@ btnSideBarClose.addEventListener('click', function () {
 }); // Открытие блока "Наши работы"
 
 btnOurWork.addEventListener('click', function () {
-  showBlock(btnOurWork, sectionOurWork, 300);
+  showBlock(sectionOurWork, 300, btnOurWork);
 }); // Открытие гамбургера
 
 hamburger.addEventListener('click', function (evt) {
@@ -46,5 +52,17 @@ document.addEventListener('click', function (evt) {
     sidebar.classList.remove('toggled');
     btnSideBarClose.style.opacity = 0;
   }
+}); // Открытие popup 
+
+popupOpen.addEventListener('click', function () {
+  showBlock(overlay, 150);
+  showBlock(popup, 200);
+}); //Закрытие popup
+
+popupClose.addEventListener('click', function () {
+  popup.style.display = 'none';
+  popup.style.opacity = 0;
+  overlay.style.display = 'none';
+  overlay.style.opacity = 0;
 });
 //# sourceMappingURL=main.js.map
